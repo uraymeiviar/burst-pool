@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>How Burst Pool work</title>
+</head>
+<body>
+<ul>
+    <li><b>Minimum payout is 250 Burst</b></li>
+    <li><b>Pool fee is 1.5%</b></li>
+    <li><b>Transaction fee is 0.5%</b> (or minimum 1 burst as required by the network)</li>
+    <li><b>Payment is instant when pool has positive balance</b></li>
+    <li><b>Share value reduction is 50% per block</b></li>
+        <p> if pool on current round does not find a block, miners shares are keep (up to 50 blocks),
+            but their value is reduced by 50% everytime we dont found a block.
+            when pool has positive balance, all share are summed up to block# where payment will be made,
+            and burst payment are made proportional to total share miners own up to this time
+        </p>
+    <li><b>Block forward allocation is 50%</b></li>
+        <p> if pool has a balance (lets say 10000 burst),
+            5000 are distributed for miner proportional to their shares up to current block as payment,
+            the rest 5000 burst will be allocated and paid for next round, (whether we found a block or not),
+            this allocation continue until pool balance is drained out
+        </p>
+    <li><b>No Deadline limit</b></li>
+        <p> deadline value from miner is converted into share value using this equation<br/>
+            share = 1000 / ( NetDiff * Deadline + 1 ) <sup>0.75</sup><br/>
+            where NetDiff (network difficulty) is calculated by Block0-BaseTarget / Block#N-BaseTarget<br/><br/>
+            <b>note</b> : to prevent user spamming low share, we implement share penalty of -0.001 on each submission
+            for miners who submit nonce that has higher deadline than their (current round) own best deadline, as spamming
+            low share is no use since pool will always pick one best deadline for every submitted nonce per round.
+        </p>
+</ul>
+</body>
+</html>

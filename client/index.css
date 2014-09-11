@@ -1,0 +1,287 @@
+html,body
+{
+    font-size:10px;
+    margin:0.5em;
+    padding:0.5em;
+    background-color: #2F1818;
+    color: #FFA300;
+    font-family: 'Abel';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#FFA300;
+}
+
+
+.Monospaced {
+    font-family: 'Source Code Pro';
+}
+
+.NoWrap {
+    white-space: nowrap;
+}
+
+.RightAligned{
+    text-align:right;
+}
+
+.FloatRight{
+    float:right;
+}
+
+.LeftAligned{
+    float:left;
+}
+
+.Hidden {
+    display : none;
+}
+
+.Invisible {
+    visibility : hidden;
+}
+
+.divTable {
+    display: table;
+}
+
+.divCol {
+    display: table-column;
+}
+
+.divRow {
+    display : table-row;
+}
+
+.divCell {
+    display : table-cell;
+}
+
+.Expand {
+    width: 100%;
+    overflow:hidden;
+}
+
+.floatPanel{
+    position: relative;
+}
+
+.stickRightPanel{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:1em;
+    width:64em;
+    padding:1em;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.siteTitle {
+    font-size: 1.5em;
+    color: #FFCF00;
+    vertical-align: middle;
+}
+
+.addr{
+    font-family: 'Source Code Pro';
+    font-size: 0.9em;
+    color: #FFA300;
+}
+
+.instruction{
+    font-size: 1em;
+    color: #ff8911;
+}
+
+.instructionSmall{
+    font-size: 0.75em;
+    color: #ff8911;
+}
+
+.panel{
+    width:50%;
+    font-size:1.25em;
+    height:100%;
+    float:left;
+}
+
+.chatBar{
+    background-color: rgba(0, 0, 0, 0);
+    color: #5b7997;
+    height:3em;
+    position: fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    z-index: 999;
+}
+
+#chatInput{
+    font-size:1.25em;
+    color:#ff8911;
+    border:0;
+    border-bottom:1px solid #ff8911;
+    background-color: transparent;
+    padding:0.25em;
+    width:100%;
+}
+
+#chatInput:focus{
+    outline-width: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#chatInputBtn{
+    width:2.5em;
+    height:2.5em;
+    border:0;
+    float:right;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0);
+    cursor:pointer;
+    color:#ff8911;
+}
+
+input[type="data-autosize-input"] {
+    width: 90px;
+    min-width: 90px;
+    max-width: 300px;
+    transition: width 0.25s;
+}
+
+.CurrentRoundItem{
+    padding:0.25em;
+    color: #FF6F20;
+}
+
+.CurrentRoundItemCol{
+    padding-right:0.5em;
+    text-align: right;
+}
+
+.AllRoundItem{
+    padding:0.25em;
+    color: #FF6F20;
+}
+
+.AllRoundItemCol{
+    padding-right:0.5em;
+    text-align: right;
+}
+
+.RecentPaymentItem{
+    padding:0.25em;
+    color: #FF6F20;
+}
+
+.RecentPaymentItemCol{
+    padding-right:0.5em;
+    text-align: right;
+}
+
+.rowPanel{
+    height:60%;
+    overflow: scroll;
+}
+
+.rowPanelBtm{
+    height:40%;
+    overflow: scroll;
+}
+
+.BlocktimeGauge {
+    padding:0.1em;
+    width:10em;
+    height:10em;
+    margin:0.5em;
+}
+
+.StatIconBlocktime {
+    background-size: 70%;
+    width:1em;
+    height:1em;
+    overflow: hidden;
+}
+
+.GaugeCanvas{
+    position: relative;
+    text-align: right;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.GaugeCanvas canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.StatLabelSmall {
+    color:#B16402;
+    font-size : 1em;
+}
+
+.StatValue {
+    color:#FFA300;
+    font-size:1.25em;
+}
+
+.gaugeLabels{
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.MiningInfoStat{
+    float:left;
+    text-align: right;
+    margin-right: 0.5em;
+    line-height: 1.2em;
+}
+
+.infoPanel{
+    height:0;
+}
+
+.chartGroup{
+    width:100%;
+}
+
+.chartGroupSelector{
+
+}
+
+.chartGroupSelectorBtn{
+    display:inline-block;
+    padding-right:0.5em;
+    font-size:1.25em;
+    color:#B16402;
+    cursor: pointer;
+}
+
+.chartGroupSelectorBtnActive{
+    color:#FFA300;
+    cursor:default;
+}
+
+.chartContainer{
+    height:10em;
+}
+
+.canvasArea{
+    position: relative;
+    width: 100%;
+    height:10em;
+}
+
+.chartCanvas{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}

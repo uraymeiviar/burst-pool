@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>How to mine at Burst Pool</title>
+</head>
+<body>
+<b>first thing</b> : You need a plot that was generated for your own account (just like on solo mining) <br/>
+please read <a href="https://bitcointalk.org/index.php?topic=731923.0">forum</a> how to generate plot
+
+<ul>
+    <li>Run your burst client (<a href="https://s3-ap-southeast-1.amazonaws.com/burst-mirror/burst_1.0.3.zip">wallet</a>) </li>
+    <li>Using your browser go to <pre>http://127.0.0.1:8125/rewardassignment.html</pre> </li>
+    <li>on the bottom ( see "Set reward recipient" ) </li>
+    <li>Put your account secret passphrase there (the one you use to login into your wallet)</li>
+    <li>set recipient as <pre>10745596296835956940</pre> </li>
+    <li>click submit, then wait for 4 block </li>
+    <li>now you can close your wallet </li>
+    <li>Download miner <a href="https://s3-ap-southeast-1.amazonaws.com/burst-mirror/burst-pool-miner-r2.zip">[ java7 : win,osx,linux ]</a> or
+           <a href="https://s3-ap-southeast-1.amazonaws.com/burst-mirror/dcct-pool-miner-r2.tgz">[ dcct-miner : linux-x64 ]</a></li>
+</ul>
+<br/>
+<b>[ ---- for java miner ---- ] </b><br/>
+<ul>
+    <li>Please read Readme.txt first, and make sure you have <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">java 7</a> installed </li>
+    <li>Edit run_mine.sh (or run_mine.bat on windows), set url to <pre>http://burst-pool.cryptoport.io:8124</pre> </li>
+    <li>run miner (run_mine.sh or run_mine.bat) </li>
+</ul>
+<b>[ ---- for dcct linux miner ---- ] </b><br/>
+<ul>
+    <li>there are executable included, but you might need to recompile it by yourself, to compile run <pre>make dcct-miner</pre> </li>
+    <li>to run this miner <pre>./dcct-miner burst-pool.cryptoport.io 8124 /path/to/plots/dir/</pre> </li>
+    <li>you can add one or more plots just add more path at the end of command line ( dont forget to add trailing '/')</li>
+</ul>
+<br>
+if you encounter some network issue like "Unable to get mining info from wallet" or "failed to submit nonce", you can try to use our alternative port at 80, so your url will be <pre>http://burst-pool.cryptoport.io</pre> or <pre>burst-pool.cryptoport.io 80 [path]</pre>for dcct-miner
+</body>
+</html>

@@ -1,0 +1,42 @@
+.json-markup {
+	line-height: 14px;
+	font-size: 10px;
+    font-family: 'Source Code Pro';
+	white-space: pre;
+}
+.json-markup-key {
+	font-weight: bold;
+    font-family: 'Source Code Pro';
+}
+.json-markup-bool {
+	color: #FFCF00
+    font-family: 'Source Code Pro';
+}
+.json-markup-string {
+	color: #f1727d;
+    font-family: 'Source Code Pro';
+}
+.json-markup-null {
+	color: gray;
+    font-family: 'Source Code Pro';
+}
+.json-markup-number {
+	color: #b3d173;
+    font-family: 'Source Code Pro';
+}
+.json-text{
+    color: #ff8913;
+    font-family: 'Source Code Pro';
+}
+
+.chatMsg{
+    color: #FFCF00;
+    font-family: 'Source Code Pro';
+    font-size:1.1em;
+}
+
+.consoleRow{
+    display:block;
+    clear: both;
+    font-family: 'Source Code Pro';
+}

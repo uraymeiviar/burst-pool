@@ -1,0 +1,21 @@
+{
+    "name": "burst-pool",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node burst-pool.js"
+    },
+    "dependencies": {
+        "debug" : "*",
+        "prettyjson" : "*",
+        "async" : "*",
+        "http-proxy" : "*",
+        "request" : "*",
+        "json-markup" : "*",
+        "socket.io" : "*",
+        "express" : "4.x",
+        "compression" : "*",
+        "moment" : "*",
+        "body-parser" : "*"
+    }
+}

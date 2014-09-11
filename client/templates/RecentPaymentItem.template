@@ -1,0 +1,5 @@
+<div class="RecentPaymentItem divRow" id="RecentPaymentItem-{{txid}}">
+    <div class="RecentPaymentItemCol divCell addr"><a href="http://burst.cryptoport.io/acc/{{accountId}}">{{accountRS}}</a></div>
+    <div class="RecentPaymentItemCol divCell" id="RecentPaymentItem-Amount-{{txid}}">{{amountStr}}</div>
+    <div class="RecentPaymentItemCol divCell" id="RecentPaymentItem-Time-{{txid}}"><a href="http://burst.cryptoport.io/tx/{{txid}}">{{sendTimeStr}}</a></div>
+</div>

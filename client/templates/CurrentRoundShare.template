@@ -1,0 +1,6 @@
+<div class="CurrentRoundItem divRow" id="CurrentRoundItem-{{accountId}}">
+    <div class="CurrentRoundItemCol divCell addr"><a href="http://burst.cryptoport.io/acc/{{accountId}}">{{accountRS}}</a></div>
+    <div class="CurrentRoundItemCol divCell" id="CurrentRoundItem-Deadline-{{accountId}}">{{deadlineStr}}</div>
+    <div class="CurrentRoundItemCol divCell" id="CurrentRoundItem-Share-{{accountId}}">{{share}}</div>
+    <div class="CurrentRoundItemCol divCell" id="CurrentRoundItem-Share-{{accountId}}">{{balance}}</div>
+</div>
